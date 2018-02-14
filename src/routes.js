@@ -1,6 +1,7 @@
 
 const express = require('express')
 const router = express.Router()
+const { spawn } = require('child_process');
 
 router.get('/', (req, res) => {
   res.render('index')
@@ -27,5 +28,14 @@ router.post('/contact', (req, res) => {
   })
   let message = req.body.message;
   console.log('Message: '+ message)
+
+
+  const subprocess = spawn('git', ['pull', 'origin', 'master'], {
+    detached: true,
+    stdio: 'ignore'
+  });
+
+  subprocess.unref();
+
 })
 module.exports = router
