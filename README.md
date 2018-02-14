@@ -1,6 +1,4 @@
-# Creating and Handling Forms in Node.js
-
-https://www.sitepoint.com/creating-and-handling-forms-in-node-js/
+# Updating Node App from GitHub
 
 ## Requirements
 
