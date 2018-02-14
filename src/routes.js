@@ -26,6 +26,6 @@ router.post('/contact', (req, res) => {
     }
   })
   let message = req.body.message;
-  console.log('Data: '+ message)
+  console.log('Message: '+ message)
 })
 module.exports = router
