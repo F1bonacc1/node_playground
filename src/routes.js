@@ -33,7 +33,7 @@ router.post('/contact', (req, res) => {
 
 
   //const subprocess = spawn('git', ['pull', 'origin', 'master'], {
-  const subprocess = spawn('git', ['pull', 'https://'+user+':'+password+'github.com/F1bonacc1/node_playground.git'], {
+  const subprocess = spawn('git', ['pull', 'https://'+user+':'+password+'@github.com/F1bonacc1/node_playground.git'], {
     detached: true,
     stdio: 'ignore'
   });
