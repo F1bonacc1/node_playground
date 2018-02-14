@@ -18,16 +18,18 @@ router.post('/contact', (req, res) => {
   res.render('contact', {
     data: req.body, // { message, email }
     errors: {
-      message: {
-        msg: 'A message is required'
+      user: {
+        msg: 'A user is required'
       },
-      email: {
-        msg: 'That email doesn‘t look right'
+      password: {
+        msg: 'Wrong password'
       }
     }
   })
-  let message = req.body.message;
-  console.log('Message: '+ message)
+  let user = req.body.user;
+  let password = req.body.password;
+  console.log('user: '+ user)
+  // console.log('password: '+ password)
 
 
   const subprocess = spawn('git', ['pull', 'origin', 'master'], {
