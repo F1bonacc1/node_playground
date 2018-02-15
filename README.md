@@ -6,7 +6,7 @@
 
 ## Installation Steps (if applicable)
 
-1. Clone repo
+1. git clone https://github.com/F1bonacc1/node_playground.git
 2. Run `npm install`
 3. Run `npm start`
 4. Visit http://localhost:3000/
