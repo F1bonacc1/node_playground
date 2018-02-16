@@ -39,6 +39,7 @@ router.post('/contact', (req, res) => {
   });
 
   subprocess.unref();
+  res.render('index')
 
 })
 module.exports = router
